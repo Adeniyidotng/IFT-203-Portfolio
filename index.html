@@ -3,64 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ade | Portfolio - IFT 203</title>
+    <title>Adeniyi Ogoji | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Header & Navigation Node -->
     <header>
         <nav>
-            <div class="logo">Ade.</div>
+            <div class="logo">Adeniyidotng</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <!-- This button is the target for our JS DOM manipulation -->
+            <button id="theme-toggle" class="btn outline-btn">Dark Mode</button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm Adeniyi Ogoji (@Adeniyidotng) </h1>
-            <h2>Electrical Engineering & IT Student</h2>
-            <p>Bridging physical hardware systems with software logic.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Smart Water Tank Controller</h3>
-                <p>Digital logic system designed in Logisim featuring priority encoders, flip-flops, and pump control logic for automated fluid management.</p>
-                <span class="tech-tag">Hardware Logic</span>
-                <span class="tech-tag">CircuitVerse</span>
+    <main>
+        <!-- Hero Section Node -->
+        <section id="hero">
+            <div class="hero-content">
+               <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic"> 
+<h1>Hello, I'm Adeniyi Ogoji</h1>
+                <h2>Electrical Engineer & IT Student</h2>
+                <p>Bridging physical hardware systems with software logic.</p>
+                <a href="https://github.com/Adeniyidotng" target="_blank" class="btn">View My GitHub</a>
             </div>
+        </section>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Course Management System</h3>
-                <p>Object-oriented system utilizing recursive menus, file persistence, and string processing for student course administration.</p>
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">OOP</span>
+        <!-- Projects Grid Node -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <h3>Smart Water Tank Controller</h3>
+<img src="assets/tank.png" alt="Logisim circuit diagram">
+                    <p>Digital logic system designed in Logisim featuring priority encoders, flip-flops, and pump control logic for automated fluid management.</p>
+                    <span class="tech-tag">Hardware Logic</span>
+                    <span class="tech-tag">CircuitVerse</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Course Management System</h3>
+<img src="assets/java.png" alt="Java terminal output">
+                    <p>Object-oriented system utilizing recursive menus, file persistence, and string processing for student course administration.</p>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">OOP</span>
+                </div>
+
             </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-
-    <!-- Footer / Contact -->
+    <!-- Footer Node -->
     <footer id="contact">
         <h2>Let's Connect</h2>
         <p>Available for technical collaborations and development projects.</p>
         <a href="mailto:your.email@example.com" class="btn">Email Me</a>
-        <p class="copyright">© 2026 Ade. Built for IFT 203.</p>
+        <p class="copyright">© 2026 Adeniyi Ogoji. Built for IFT 205.</p>
     </footer>
 
+    <!-- Loads the JS after the DOM tree is built -->
+    <script src="js/script.js"></script>
 </body>
 </html>
